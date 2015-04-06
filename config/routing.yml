@@ -61,7 +61,7 @@ default_create:
   load:
     - model/base/usuarioBaseTableClass.php
     - model/usuarioTableClass.php
-    - model/bitacoraTableClass.php
+#    - model/bitacoraTableClass.php
 
 default_edit:
   url:    /usuario/editar

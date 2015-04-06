@@ -34,16 +34,16 @@
         </div>
     </div>
      <div class="form-group">
-        <label for="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) .'_1' ?>" class="col-lg-2 control-label">contraceña</label>
+        <label for="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true)?>" class="col-lg-2 control-label">contraceña</label>
         <div class="col-lg-5">
-            <input type="password" class="form-control" id="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) .'_1'  ?> " name="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) .'_1'  ?>"
+            <input type="password" class="form-control" id="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) ?> " name="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) ?>"
                    placeholder="contraceña">
         </div>
     </div> 
        <div class="form-group">
-        <label for="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) .'_2' ?>" class="col-lg-2 control-label">Confirmar contraceña</label>
+        <label for="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) .'_1' ?>" class="col-lg-2 control-label">Confirmar contraceña</label>
         <div class="col-lg-5">
-            <input type="password" class="form-control" id="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) .'_2' ?> " name="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) .'_2'  ?>"
+            <input type="password" class="form-control" id="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) .'_1' ?> " name="<?php echo usuarioTableClass::getNameField(usuarioTableClass::PASSWORD,true) .'_1'  ?>"
                    placeholder="confirmar contraceña">
         </div>
     </div> 
