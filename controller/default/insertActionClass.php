@@ -13,30 +13,11 @@ use mvc\i18n\i18nClass as i18n;
  *
  * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
  */
-class createActionClass extends controllerClass implements controllerActionInterface {
+class insertActionClass extends controllerClass implements controllerActionInterface {
 
   public function execute() {
     try {
-      if (request::getInstance()->isMethod('POST')) {
-
-        $usuario = request::getInstance()->getPost(usuarioTableClass::getNameField(usuarioTableClass::USER, true));
-        $password = request::getInstance()->getPost(usuarioTableClass::getNameField(usuarioTableClass::PASSWORD, true));
-        echo 'usuario';
-        if (strlen($usuario) > usuarioTableClass::USER_LENGTH) {
-          throw new PDOException(i18n::__(00001, null, 'errors', array(':longitud' => usuarioTableClass::USER_LENGTH)), 00001);
-        }
-
-        $data = array(
-            usuarioTableClass::USER => $usuario,
-            usuarioTableClass::PASSWORD => md5($password)
-        );
-        usuarioTableClass::insert($data);
-//        recuerde que debo poner la palabra insertar en el diccionario y esto es para bitacora para create  
-        bitacora::register('insertar', usuarioTableClass::getNameTable());
-        routing::getInstance()->redirect('default', 'insert');
-      } else {
-        routing::getInstance()->redirect('default', 'insert');
-      }
+    $this->defineView('insert', 'default', session::getInstance()->getFormatOutput());
     } catch (PDOException $exc) {
       echo $exc->getMessage();
       echo '<br>';
