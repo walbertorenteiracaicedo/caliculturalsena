@@ -28,8 +28,8 @@ if (config::getDbUnixSocket() !== null) {
   );
 }
 
-config::setPathAbsolute('/var/www/html/SohoFramework/');
-config::setUrlBase('http://localhost/SohoFramework/web/');
+config::setPathAbsolute('/var/www/html/caliculturalsena/');
+config::setUrlBase('http://localhost/caliculturalsena/web/');
 
 config::setScope('prod'); // prod
 config::setDefaultCulture('es');
@@ -47,7 +47,7 @@ config::setHeaderExcel2007('Content-Type: application/vnd.openxmlformats-officed
 
 config::setCookieNameRememberMe('mvcSiteRememberMe');
 config::setCookieNameSite('mvcSite');
-config::setCookiePath('/SohoFramework/web/' . config::getIndexFile());
+config::setCookiePath('/caliculturalsena/web/' . config::getIndexFile());
 config::setCookieDomain('http://localhost/');
 config::setCookieTime(3600 * 8); // una hora en segundo 3600 y por 8 serían 8 horas
 
