@@ -117,7 +117,11 @@ default_admin:
   
 default_editUsuario:
   url:    /editUsuario
-  param:  { module: default, action: editUsuario, format: html }  
+  param:  { module: default, action: editUsuario, format: html } 
+  
+default_signin:
+  url:    /ingresar
+  param:  { module: default, action: signin, format: html}
 #
 #default_insert:
 #  url:    /insert

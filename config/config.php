@@ -6,10 +6,10 @@ config::setRowGrid(10);
 
 config::setDbHost('localhost');
 config::setDbDriver('pgsql'); // pgsql
-config::setDbName('bdcultural');
-config::setDbPort(5433); // 5432
+config::setDbName('portal_cultural');
+config::setDbPort(5432); // 5432
 config::setDbUser('postgres');
-config::setDbPassword('walo');
+config::setDbPassword('sanandreas');
 // Esto solo es necesario en caso de necesitar un socket para la DB
 //config::setDbUnixSocket('/tmp/mysql.sock');
 
@@ -28,7 +28,7 @@ if (config::getDbUnixSocket() !== null) {
   );
 }
 
-config::setPathAbsolute('/var/www/html/caliculturalsena/');
+config::setPathAbsolute('/var/www/caliculturalsena/');
 config::setUrlBase('http://localhost/caliculturalsena/web/');
 
 config::setScope('prod'); // prod

@@ -1,5 +1,5 @@
 <?php use mvc\routing\routingClass as routing ?>
-
+<?php use mvc\session\sessionClass as session ?>
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
@@ -26,9 +26,18 @@
                     <li>
                         <a href= "<?php echo routing::getInstance()->getUrlWeb('default', 'sample') ?>">Sample </a>
                     </li>
-                     <li>
-                        <a href= "<?php echo routing::getInstance()->getUrlWeb('default', 'admin') ?>">admin </a>
+                    <li>
+                        <a href= "<?php echo routing::getInstance()->getUrlWeb('default', 'admin') ?>">admin </a>                        
                     </li>
+                    <?php if (session::getInstance()->isUserAuthenticated() == true){ ?>
+                    <li>
+                        <a href= "<?php echo routing::getInstance()->getUrlWeb('shfSecurity', 'logout') ?>">Salir </a>
+                    </li>
+                    <?php } else { ?>
+                    <li>
+                        <a href= "<?php echo routing::getInstance()->getUrlWeb('default', 'signin') ?>">Login </a>
+                    </li>
+                    <?php } ?>
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
