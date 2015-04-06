@@ -1,0 +1,35 @@
+all:
+  favicon: 
+  title: 
+  meta:
+    - charset="UTF-8"
+  javascript:
+    - bootstrap.js
+    - bootstrap.min.js
+    - clean-blog.js
+    - clean-blog.min.js
+    - jquery.js
+    - jquery.min.js
+  stylesheet:
+#    - bootstrap.css
+#    - main.css
+    - bootstrap.css
+    - bootstrap.min.css
+    - clean-blog.css
+    - clean-blog.min.css
+
+ 
+
+shfSecurity:
+  index:
+    title: 
+    stylesheet:
+#      - bootstrap.css
+#      - bootstrap.min.css
+#      - clean-blog.css
+#      - clean-blog.min.css
+
+default:
+  index:
+    javascript:
+#      - index.js

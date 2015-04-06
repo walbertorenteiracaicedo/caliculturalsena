@@ -1,0 +1,17 @@
+shfSecurity:
+  index:
+    security: false
+  logoin:
+    security: false
+  logout:
+    security: true
+
+default:
+  index:
+    security: false
+    credentials:
+      - [admin, cajero]
+  insert:
+    security: false
+  create:
+    security: false  
